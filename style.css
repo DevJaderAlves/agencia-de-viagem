@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #eaeaea;
+}
+header{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.topo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topo-logo{
+    width:32px ;
+    height: 32px;
+}
+.topo-titulo{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-bottom: 10px;
+}
+.limite-largura{
+    width: 1024px;
+}
+/* aqui termina a seção da parte do topo, no header foi colocado largura máxima
+e altura de 55px com display flex para que os itens fossem alinhados e com a cor de fundo branca.
+e no segundo container foi definido largura e altura de 100% tbm display flex para que itens fossem alinhados.
+O logo foi posto largura e altura de 32px.
+O titulo com fonte de 24px, cor e margim inferior.
+Io tudo dentr de um container qu por sua vez esta com largura total definida*/
+
+
+
+
+/* ---------------------------------------------- */
+.orcamento-fundo{
+    width: 100%;
+    height: auto;
+    background-image: url("./img/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* aqui usamos a imagem de fundo */
+
+
+
+
+/* ----------------------------------------------- */
+.orcamento-area {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/* neste  temos a definição da largura máxima todos os elementos centralizados e um espaçamento interno de cima e baixo de 50px, o mesmo só funcionou pois está com altura definida como automático*/
+
+
+.orcamento-cabecalho {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5d15d1;
+}
+/* este demos uma largura de 100% altura de 35px display flex para que seus itens fossem alinhados e cor de fundo */
+
+
+.orcamento-logo{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+/* neste aqui é a imagem com tamanho definido e rotacionado também */
+
+
+.orcamento-descricao{
+    font-size: 14px;
+    color: white;
+    margin-left: 5px;
+}
+
+.orcamento-area-formulario {
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.orcamento-subtitulo-formulario{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+.formulario{
+    display:flex;
+    flex-direction:column;
+}
+.formulario label{
+    font-size: 16px; 
+}
+.formulario input, .formulario select{
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+.formulario input{
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.formulario select {
+    padding: 0 3px;
+}
+.formulario-campo-duplo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.formulario-campo-duplo div{
+    width: calc(50% - 10px);
+}
+.radio{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.radio div{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.radio input{
+    width: 15px;
+}
+.radio label {
+    margin-left: 8px;
+}
+
+.formulario button{
+    width: 160px;
+    height: 32px;
+    border: none;
+    background: #5d15d1;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+.ofertas-area, .natureza-area{
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+.ofertas-titulo, .natureza-titulo{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.ofertas-descricao, .natureza-descricao{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+.ofertas-descricao span {
+    font-weight: bold;
+}
+.ofertas-imagens{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+.oferta-imagem-destaque, .oferta-quatro-imagens, .natureza-imagem{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+.oferta-imagem-destaque img, .oferta-quatro-imagens img, .natureza-imagem img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------- */
+
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.natureza-imagem div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.natureza-imagem h3 {
+    font-size: 16px;
+}
+
+.natureza-imagem p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+
+/* ----------------------------------------------- */
+
+footer {
+    width: 100%;
+    background: #5d15d1;
+    margin: 32px 0 0 0;
+}
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+.rodape-conteudo div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.rodape-conteudo h2 {
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.rodape-conteudo img {
+    width: 18px;
+}
+.rodape-conteudo span {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+@media(max-width: 1100px){
+    .limite-largura{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    /* aqui foi dado a largura máxima do botão */
+    .formulario button {
+        width: 100%;
+    }
+    /* aqui foi posto no container das imagens a altura máxima e também
+    deixando uma embaixo da outra */
+    .ofertas-imagens{
+        height:100%;
+        flex-direction: column;
+    }
+    /* aqui foi definido a largura e altura das imagens e um espaçamento entre elas */
+    .oferta-imagem-destaque, .oferta-quatro-imagens figure{
+        width:100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+    /* aqui o container das quatros imagens deixando com toda a largura */
+    .oferta-quatro-imagens{
+        width: 100%;
+    }
+    /* aqui foi colocado que as imagens fossem fica embaixo */
+    .natureza-duas-imagens {
+        flex-direction: column;
+    }
+   .natureza-imagem{ 
+        width: 100%;
+        margin-top: 15px;
+    }
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape-conteudo {
+        width: 250px;
+    }
+}
+/* aqui foi estilizado somente o formulario */
+
+@media(max-width: 540px)
+{
+    .formulario-campo-duplo, .radio{
+        flex-direction: column;
+    }
+    .formulario-campo-duplo div, .radio div {
+        width: 100%;
+    }
+}
+
+
